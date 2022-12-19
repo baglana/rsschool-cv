@@ -18,6 +18,15 @@ body {
     margin: 0 auto;
 }
 
+.row {
+    display: flex;
+}
+  
+.column {
+    flex: 50%;
+    width: 50%;
+  }
+  
 .header {
     position: fixed;
     width: 100%;
@@ -30,7 +39,7 @@ body {
 }
 
 .section {
-    padding-top: 62px;
+    padding-top: 100px;
 }
 
 code {

@@ -28,43 +28,49 @@
     <main>
         <div class="container">
             
-            <header class="section" id="home">
-                <img src="assets/img/avatar.png" alt="Avatar" width="100">
-                <h1>Baglan Azimkhan</h1>
-                <h2>Frontend Developer</h2>
-                <pre>
-                    <code>       
-                        class FrontendDeveloper {
+            <header class="section row" id="home">
+
+                <div class="column">
+                    <img src="assets/img/avatar.png" alt="Avatar" width="150">
+                    <h1>Baglan Azimkhan</h1>
+                    <h2>Frontend Developer</h2>
+                </div>
+
+                <div class="column">
+                    <pre>
+                        <code>       
+class FrontendDeveloper {
+
+    name;
     
-                            name;
-                            
-                            constructor(name) {
-                                this.name = name;
-                                this.languages = [];
-                            }
-                            
-                            introduceSelf() {
-                                console.log(`Hi, my name is ${this.name}`);
-                                console.log('I know ');
-                                this.languages.forEach((lang) => {
-                                    console.log(lang);
-                                });
-                            }
-                            
-                            learn(language) {
-                                this.languages.push(language);
-                            }
-                        };
-                        
-                        let baglan = new FrontendDeveloper('Baglan');
-                        
-                        baglan.learn('html');
-                        baglan.learn('css');
-                        baglan.learn('js');
-                        
-                        baglan.introduceSelf();
-                    </code>
-                </pre>
+    constructor(name) {
+        this.name = name;
+        this.languages = [];
+    }
+    
+    introduceSelf() {
+        console.log(`Hi, my name is ${this.name}`);
+        console.log('I know ');
+        this.languages.forEach((lang) => {
+            console.log(lang);
+        });
+    }
+
+    learn(language) {
+        this.languages.push(language);
+    }
+};
+
+let baglan = new FrontendDeveloper('Baglan');
+
+baglan.learn('html');
+baglan.learn('css');
+baglan.learn('js');
+
+baglan.introduceSelf();
+                        </code>
+                    </pre>
+                </div>
             </header>
             
             
